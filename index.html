@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio WebSite</title>
+    <link rel="stylesheet" href="P.css">
+    <script src="https://kit.fontawesome.com/dedc8ebf34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="a">Bablu</span> <span class="a1"></span>Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">• Home</a></li>
+                    <li><a href="#about">• About</a></li>
+                    <li><a href="#services">• Services</a></li>
+                    <li><a href="#portfolio">• Portfolio</a></li>
+                    <li><a href="#contact">• Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hii, I'm <span>Bablu</span> From<br>Rajasthan</h1>
+                <p>• Java  • SpringBoot  • MERN  • Nodejs </p>
+            </div>
+        </div>
+    </div>
+
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span class="a1">• About Me</span></h1>
+                    <p>• I am a proactive individual with effective organizational abilities and a passion for continuous learning. Seeking an entry-level role where I can contribute my enthusiasm, drive, and determination to contribute to organizational growth and success.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>• Java • SpringBoot • UI</span><br>Developer WebSite Interfaces</li>
+                            <li><span>• Web Development</span><br>Building WebSites</li>
+                            <li><span>• App Development</span><br>Building Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>• 2024 - Current</span><br>Java Full Stack Developer Training at Sathya Technologies ,Hyderabad</li>
+                            <li><span>• 2024 - Current</span><br>Freasher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>• 2020 To 2023</span><br>Bachelor in Computer Application From Govt. Nirbhay Singh Patel Science College,Indore Madhya Pradesh</li>
+                            <li><span>• 2023</span><br>Java Full Stack Developer Training at Sathya Technologies , Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Services -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title"><span class="a1">• Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Add Releted Text</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>FrontEnd Design</h2>
+                    <p>Add Releted Text</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Add Releted Text</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio -->
+    <div  id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><span class="a1">• My Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The App Connects you The Talented People Around The World. Download It From Play Store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App Connects you The Talented People Around The World. Download It From Play Store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The App Connects you The Talented People Around The World. Download It From Play Store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+<!-- Contact     -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span class="a1">• Contact Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>Add Email</p>
+                    <p><i class="fa-solid fa-phone-volume"></i></i>Add Mobile No.</p>
+                    <div class="social-icon">
+                        <a href="https://whatsapp.com"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="img/CV.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name:" required>
+                        <input type="email" name="Email" placeholder="Your Email:" required>
+                        <textarea name="Message" rows="2" placeholder="Your Message:"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © 2023, Made With <i class="fas fa-heart"></i> By <span class="a1">Bablu</span></p>
+        </div>
+    </div>
+
+<!-- Script For About Me -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- Script For Small Screen(Mobile) -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- Script For FeedBack -->
+<script>
+    const scriptURL = 'https://drive.google.com/drive/folders/1D_Yn6BuNG-mbK52mJ6CTH-iE6Umwc-2P?usp=drive_link'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent SuccessFully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
