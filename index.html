@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="img/user.png" alt="">
+                    <img src="img/background.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"><span class="a1">• About Me</span></h1>
@@ -70,31 +70,29 @@
     </div>
 
 <!-- Services -->
-    <div class="services">
+    <div id="services">
         <div class="container">
             <h1 class="sub-title"><span class="a1">• Services</span></h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Add Releted Text</p>
-                    <a href="https://techprimelab-theta.vercel.app">Learn More</a>
+                    <p>We create visually appealing, user-friendly, and responsive websites tailored to your needs, ensuring a seamless online presence.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>FrontEnd Design</h2>
-                    <p>Add Releted Text</p>
-                    <a href="https://techprimelab-theta.vercel.app">Learn More</a>
+                    <p>Crafting intuitive and interactive user interfaces with modern tools and frameworks for an engaging user experience.</p>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Add Releted Text</p>
-                    <a href="#">Learn More</a>
+                    <h2>Backend Development</h2>
+                    <p>Building robust server-side logic, APIs, and database solutions to ensure smooth functionality and scalability for your applications.</p>
                 </div>
             </div>
         </div>
     </div>
+    
 
 <!-- Portfolio -->
     <div  id="portfolio">
@@ -104,24 +102,24 @@
                 <div class="work">
                     <img src="img/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The App Connects you The Talented People Around The World. Download It From Play Store.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <h3>LearnWihUs</h3>
+                        <p>A comprehensive platform to connect and learn from talented individuals worldwide. Explore interactive courses and resources online.</p>
+                        <a href="https://learnwithus-three.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="img/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The App Connects you The Talented People Around The World. Download It From Play Store.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <h3>Screp WebApp</h3>
+                        <p>Screap of social account , description , logo , phone no , and screenshoot of homepage of the releted websites .</p>
+                        <a href="https://screp-web-app.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="img/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Techprime </h3>
-                        <p>The WebApp Contains frontend and backend The Talented People Around The World. Search on google .</p>
+                        <h3>Project-Management </h3>
+                        <p>A powerful web application integrating front-end and back-end functionality to streamline project workflows and team collaboration .</p>
                         <a href="https://techprimelab-theta.vercel.app"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -139,7 +137,7 @@
                     <p><i class="fa-solid fa-envelope"></i>Add Email</p>
                     <p><i class="fa-solid fa-phone-volume"></i></i>Add Mobile No.</p>
                     <div class="social-icon">
-                        <a href="https://whatsapp.com"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://wa.me/+916266007182"><i class="fa-brands fa-square-whatsapp"></i></a>
                         <a href="https://www.facebook.com/bablu.dangi.906"><i class="fa-brands fa-square-facebook"></i></a>
                         <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.instagram.com/bablu_patel__9788/"><i class="fa-brands fa-square-instagram"></i></a>
@@ -194,22 +192,23 @@
 
 <!-- Script For FeedBack -->
 <script>
-    const scriptURL = 'https://drive.google.com/drive/folders/1D_Yn6BuNG-mbK52mJ6CTH-iE6Umwc-2P?usp=drive_link'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfcYFOJiZjYYyOP-wGsB32YYEU8MpRoN75aY8qYPaFnt6dA5eEktKtjrQxCrIN2vuzjQ/exec';
+    
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
   
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent SuccessFully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
 </script>
 
 </body>
